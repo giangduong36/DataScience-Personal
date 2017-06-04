@@ -18,8 +18,8 @@ print(pd.Series(["Corgi", "Garfield"], index=["dog", "cat"]))
 
 # Query
 # Get entry
-print(sport.iloc[1])  # 2nd entry
-print(sport.loc['Golf'])  # Look up by index
+print(sport.iloc[1])  # Look up based on position
+print(sport.loc['Golf'])  # Look up based on label
 print(sport[2], sport['Golf'])  # Implied, dangerous
 
 # Iterate
@@ -96,3 +96,4 @@ print(df['year'].unique())
 df = df.set_index('manufacturer', 'trans')
 print(df.head())
 print(df.loc['audi', 'city'])
+
